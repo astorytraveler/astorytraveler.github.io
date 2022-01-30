@@ -1,12 +1,75 @@
+:root {
+    --primary-color: #00A5CF   ;
+    --secondary-color: #004E64 ;
+    --accent1-color: #EBFFF4;
+    --accent2-color: #66E16E;
+}
+
+
 #content {
         max-width: 1600px;
         margin: 0 auto;
-        background-color: powderblue;
+        background-color: #00A5CF ;
       }
 
-      nav a {
+      body {
+        background-color: #004E64; 
+    }
+    header {
+        background-color:#004E64;
+    }
+    nav a:hover {
+        background-color: #66E16E;
+    }
+    
+    .book{
+        background-color: #EBFFF4
+
+    }
+
+    .join{ background-color: #EBFFF4
+    }
+    .book:hover{
+        background-color: #66E16E
+    }
+    .join:hover{background-color: #66E16E
+    }
+    .msg{ background-color: #66E16E
+        
+    }
+
+    footer{ background-color: #66E16E
+        
+    }
+
+
+
+
+
+
+      nav a { background-color: #EBFFF4;
+        color: #004E64;
         text-align: center;
       }
+      nav a:hover{text-decoration: none;
+        color:  #004E64
+
+      }
+      .book{text-decoration: none;
+        color:black}
+      .join{text-decoration: none;
+        color: black}
+      .book:hover{color:#004E64}
+      .join:hover{color:#004E64}
+      .home-title{color: #EBFFF4}
+      h4{color:  #EBFFF4}
+
+      .msg h2 {color:#004E64}
+      .msg p {color:#004E64}
+      footer h3{color:#004E64}
+      footer a {text-decoration: none;
+        color:#004E64}
+      footer a:hover{color: #EBFFF4;}
 
       #hero-msg h1{
         text-align: center;
@@ -28,6 +91,7 @@
 
 
       #background {
+          background-color:#004E64;
         height: 725px;
     }
 
