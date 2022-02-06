@@ -1,0 +1,36 @@
+
+
+#top{
+    width:100%;
+}
+
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+    background-color: grey ;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+
+
+
+.desk{
+    width: 100%;
+    border-radius: 50px;
+    grid-row: 2;
+}
+
+.person{
+    width: 100%;
+    border-radius: 50px;
+    grid-row: 2;
+}
+
+.graphic{
+    width: 100%;
+    border-radius: 50px;
+    grid-row: 2;
+}

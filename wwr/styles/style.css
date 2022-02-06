@@ -12,9 +12,13 @@
         background-color: #00A5CF ;
       }
 
-      body {
-        background-color: #004E64; 
+      body {font-family:  Arial, sans-serif ;
+        background-color: #004E64;
+        font-size: 22px;
+        margin: 0;
+        padding: 0; 
     }
+    h2{margin: 0;}
     header {
         background-color:#004E64;
     }
@@ -22,50 +26,57 @@
         background-color: #66E16E;
     }
     
-    .book{
-        background-color: #EBFFF4
 
-    }
 
-    .join{ background-color: #EBFFF4
-    }
     .book:hover{
         background-color: #66E16E
     }
     .join:hover{background-color: #66E16E
     }
-    .msg{ background-color: #66E16E
+    .msg{ background-color: #66E16E;
+      line-height: 1.5em;
+      padding: 35px;
         
     }
 
-    footer{ background-color: #66E16E
+    footer{ background-color: #66E16E;
+      padding: 25px 50px;
+      padding-top: 15px;
         
     }
 
 
 
 
-
-
-      nav a { background-color: #EBFFF4;
-        color: #004E64;
+      nav a { background-color: #004E64;
+        color: #EBFFF4;
         text-align: center;
+        padding: 35px;
       }
       nav a:hover{text-decoration: none;
         color:  #004E64
 
       }
-      .book{text-decoration: none;
-        color:black}
-      .join{text-decoration: none;
-        color: black}
-      .book:hover{color:#004E64}
-      .join:hover{color:#004E64}
-      .home-title{color: #EBFFF4}
+      .book, .join{text-decoration: none;
+        color:black;
+        font-size: 18px; 
+        padding: 15px 30px;
+        background-color: #EBFFF4;
+        margin-top: 50px;
+        border-radius: 5px;}
+
+
+      .home-title {color: #EBFFF4;
+          font-family: Arial, sans-serif;
+          font-size: 2em;
+          margin-top: 10px;
+      }
       h4{color:  #EBFFF4}
 
       .msg h2 {color:#004E64}
-      .msg p {color:#004E64}
+      .msg p {color:#004E64;
+        font-size: 2em;
+        padding-bottom: 15px;}
       footer h3{color:#004E64}
       footer a {text-decoration: none;
         color:#004E64}
@@ -100,12 +111,41 @@
       }
 
       .logo{width: 80px;
+        position:relative;
+      top: 0px;
+      left: 0px;
+      z-index: 0;
+        
     }
 
       .icon {
         width: 80px;
+        padding-top: 10px;
     }
 
     #hero-img{
         width: 100%
     }
+
+    #logo_link {padding-top: 5px;}
+
+    footer .social img{padding-top: 15px;} 
+
+    /* I need to check if it meant for me to write code for footer .social img as a whole or two different parts? */
+
+    .rivers-card {margin: 200px 0;}
+    .camping-card {margin: 200px 0;}
+    .rapids-card {margin: 200px 0;}
+
+    footer {margin-top: 200px;}
+
+    .card-img {
+      border: 10px solid #004E64;
+  }
+
+  main section img {
+    box-sizing: border-box;
+}
+
+   .mountains {margin-top: 75px;
+  margin-bottom: 150px} 
