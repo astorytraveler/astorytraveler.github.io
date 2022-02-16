@@ -34,7 +34,7 @@
     .book:hover{
         background-color: #66E16E
     }
-    .join:hover{background-color: #66E16E
+    .join:hover{background-color: #004E64
     }
     .msg{ background-color: #66E16E;
       line-height: 1.5em;
@@ -81,7 +81,7 @@ background-color: #004E6499}
 
       .msg h2 {color:#004E64}
       .msg p {color:#004E64;
-        font-size: 2em;
+        font-size: 1.5em;
         padding-bottom: 15px;}
       footer h3{color:#004E64}
       footer a {text-decoration: none;
