@@ -1,18 +1,34 @@
-# This line imports or includes the library we will need
-from PIL import Image
-
-# This line opens the image and loads it into a variable called "image_original"
-image_original = Image.open("beach.jpg")
 
 
-width, height = image_original.size
 
-pixels_original = image_original.load()
+numberadd = [];
+number = 10
+while number != 0:
+    print("Enter a list of number, type 0 when finished")
+    number = int(input("Enter Number: "))
+    if number != 0:
+        numberadd.append(number)
+    elif number == 0:
+        
+        print (numberadd)
+sum = 0
 
-r, g, b = pixels_original[100, 200]
+for number in numberadd:
+    sum += number
+print (sum)
 
-pixels_original[100, 200] = (255, 0, 255)
+count = len(numberadd)
+average = sum / count
 
-# This line attempts to open a new window to display the image.
-image_original.show()
+print(f"The average is: {average}")
+
+for number in numberadd:
+    print(number, end=" ")
+
+
+        
+
+
+
+ 
 
