@@ -1,9 +1,16 @@
-smallest = 0
+import numpy
 
-for value in my_list:
+speed = [99,86,87,88,111,86,103,87,94,78,77,85,86]
 
-    if value < smallest:
+x = numpy.mean(speed)
 
-        smallest = value
+print(x)
 
-print(f"The smallest is {smallest}")
+
+
+
+
+
+
+
+
