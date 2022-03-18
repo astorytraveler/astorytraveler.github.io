@@ -1,16 +1,14 @@
-import numpy
+with open("hr_system.txt") as f:
+    # The file has now been opened and stored in a variable "f"
 
-speed = [99,86,87,88,111,86,103,87,94,78,77,85,86]
+    # Read each line, one by one, into a variable: current_line
+    for line in f:
+        # Split the current line into its parts based on a space " " as the separator
+        parts = line.split(" ")
 
-x = numpy.mean(speed)
+        # Save the parts we need into variables
+        name = parts[0]
+        title = parts[2]
 
-print(x)
-
-
-
-
-
-
-
-
-
+        # Output the name and title as desired
+        print(f"Name: {name}, Title: {title}")
