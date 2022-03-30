@@ -1,36 +1,27 @@
-initial_option = ""
-items_cart = []
-prices_cart = []
-
+max_life = 0
+max_country = "abc"
+min_life = 50
 total = 0
-i = None
+num = 0
 
-while initial_option != 5:
-    print ("-----------")
-    print ("\nPlease select one of the following:")
-    print ("1. Add item\n2. Remove an item\n3. View cart\n4. Compute the Total\n5. Quit")
-    initial_option == int(input("Please select an option number: "))
-    
-    if initial_option == 1:
-        item = input(f"\nWhat item would you like to add? ")
-        items_cart.append(item)
-        price = float(input (f"\nWhat is the price of {item}"))
-        prices_cart.append(price)
-        print(f"\n{item} at ${price:.2f} has been added to the cart.")
+chosen_volume = input("Which year would you like to learn about? ")
+with open ("life-expectancy.csv") as file:
+    next(file)
+    for line in file:
+        line_split = line.split(",")
+        country =  line_split[0].strip()
+        year = line_split[2].split()
+        life = float(line_split[3])
+        if life > max_life:
+            max_life = life
+            max_country = country
+            max_year = year
+        if life < min_life:
+            min_life = life
+            min_country = country
+            min_year = year
+       
 
-    if initial_option == 2:
-        items_to_remove = int(input(f"\nWhat item number would you like to remove? "))
-        items_cart.pop(items_to_remove)
-        prices_cart.pop(items_to_remove)
-        print(f"\nItem number {items_to_remove} has been removed.\n")
+    print(f"The Maximun life expectancy was {max_country} with {max_life} in {max_year}")
+    print(f"The Minimun expectancy was {min_country} with {min_life} in {min_year}")
 
-    if initial_option == 3:
-        print ("\nThe content of your shopping cart are: ")
-        for i in range(len(items_cart)):
-            print(f"{i}. {items_cart[i]} - {prices_cart[i]:.2f}")
-
-    if initial_option == 4:
-        total = sum (prices_cart)
-        print (f"Your cart total is ${total}.")
-
-print ("\nThank you. Goodbye.\n")
